@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Signees</title>
+</head>
+<body>
+
+<h1>List of people who signed up</h1>
+<ul>
+    <li th:each="signee : ${signees}">
+        <span th:utext="${signee}">userdata</span>
+    </li>
+</ul>
+
+</body>
+</html>

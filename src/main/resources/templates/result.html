@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Signees</title>
+</head>
+<body>
+
+<h1>List of addresses with name</h1>
+<ul>
+    <li th:each="signee : ${signeeAddresses}">
+        <span th:utext="${signee.name}">name</span> <span th:utext="${signee.address}">address</span>
+    </li>
+</ul>
+
+</body>
+</html>
